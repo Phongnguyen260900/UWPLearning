@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="DemoNavigate.Details"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DemoNavigate"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Background="AliceBlue" Margin="10,50,50,50" Padding="10,50,50,50">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="BookName: " Margin="0,0,5,0"/>
+                <TextBlock Text="{Binding BookName}" FontWeight="Black"></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Author: " Margin="0,0,5,0"/>
+                <TextBlock Text="{Binding Author}" Foreground="Black"></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Price: " Margin="0,0,5,0"/>
+                <TextBlock Text="{Binding Price}" Foreground="Red"></TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Button Content="Buy Now" Height="50" Width="Auto" HorizontalAlignment="Center" Background="Green"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
